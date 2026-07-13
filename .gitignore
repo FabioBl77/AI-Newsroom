@@ -1,0 +1,18 @@
+# OpenCode sessions (chat history, personal traces)
+.opencode/agents/sessions/
+
+# Secrets and keys
+.opencode/keys.json
+*.key
+.env
+*.env.local
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+
+# Temporary HTML pages (not part of the final site)
+# Only sito/ is published

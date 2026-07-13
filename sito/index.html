@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Il Corriere dell'AI — Mini-sito notizie</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,'Times New Roman',serif;background:#f8f6f2;color:#1a1a1a}
+header{background:#1a1a1a;color:white;padding:2.5rem 1rem;text-align:center}
+header h1{font-family:'Helvetica Neue',Arial,sans-serif;font-size:2.2rem;letter-spacing:1px}
+header h1 span{color:#c9a227}
+header p{color:#999;margin-top:.5rem;font-size:.9rem}
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+.featured{background:white;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.1);margin-bottom:2.5rem;display:grid;grid-template-columns:1fr 1fr}
+.featured img{width:100%;height:100%;object-fit:cover;min-height:350px}
+.featured-body{padding:2.5rem;display:flex;flex-direction:column;justify-content:center}
+.featured-body .tag{display:inline-block;background:#c9a227;color:white;font-size:.75rem;padding:.3rem .8rem;border-radius:3px;font-family:Arial,sans-serif;margin-bottom:.8rem;text-transform:uppercase;letter-spacing:.5px}
+.featured-body .date{color:#999;font-size:.8rem;font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.5px}
+.featured-body h2{font-size:1.8rem;line-height:1.2;margin:.5rem 0 1rem}
+.featured-body h2 a{color:#1a1a1a;text-decoration:none}
+.featured-body h2 a:hover{color:#c9a227}
+.featured-body p{color:#555;font-size:1rem;line-height:1.6;margin-bottom:1.5rem}
+.featured-body .credit{color:#999;font-size:.8rem;font-style:italic;margin-bottom:1rem}
+.secondary-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;margin-top:2rem}
+.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,.12)}
+.card img{width:100%;height:200px;object-fit:cover}
+.card-body{padding:1.5rem;flex:1;display:flex;flex-direction:column}
+.card .tag{display:inline-block;background:#c9a227;color:white;font-size:.7rem;padding:.2rem .6rem;border-radius:3px;font-family:Arial,sans-serif;margin-bottom:.5rem}
+.card .date{color:#999;font-size:.8rem;font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.5px}
+.card h2{margin:.5rem 0 .8rem;font-size:1.1rem;line-height:1.3}
+.card h2 a{color:#1a1a1a;text-decoration:none}
+.card h2 a:hover{color:#c9a227}
+.card p{color:#555;font-size:.85rem;line-height:1.5;margin-bottom:1rem;flex:1}
+.read-more{color:#c9a227;text-decoration:none;font-weight:bold;font-family:Arial,sans-serif}
+.read-more:hover{text-decoration:underline}
+footer{text-align:center;padding:2.5rem;color:#999;font-size:.85rem;border-top:1px solid #ddd;margin-top:3rem;font-family:Arial,sans-serif;max-width:1100px;margin-left:auto;margin-right:auto}
+@media(max-width:900px){.featured{grid-template-columns:1fr}.featured img{min-height:250px;max-height:300px}.featured-body h2{font-size:1.4rem}.secondary-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.secondary-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><h1>📰 <span>Il Corriere</span> dell'AI</h1><p>6 notizie pubblicate</p></header>
+<div class="container">
+
+<!-- IN EVIDENZA: ChatGPT supera YouTube e Amazon -->
+<article class="featured">
+  <img src="images/chatgpt-smartphone.jpg" alt="ChatGPT supera YouTube e Amazon: l'AI riscrive Google" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-body">
+    <span class="tag">Tecnologia · AI</span>
+    <span class="date">10 Luglio 2026</span>
+    <h2><a href="chatgpt-2026.html">ChatGPT supera YouTube e Amazon: l'AI riscrive Google</a></h2>
+    <p class="credit">📸 Tim Witzdam su Unsplash</p>
+    <p>ChatGPT diventa il termine più cercato su Google con 94,6 milioni di ricerche mensili, superando YouTube e Amazon. IPO da 1 trilione di dollari all'orizzonte.</p>
+    <a href="chatgpt-2026.html" class="read-more" style="font-size:1.1rem">Leggi l'articolo completo →</a>
+  </div>
+</article>
+
+<h3 style="font-family:Arial,sans-serif;color:#666;margin-bottom:1rem;text-transform:uppercase;letter-spacing:1px;font-size:.8rem">Altre notizie</h3>
+<div class="secondary-grid">
+<article class="card">
+  <img src="images/spiaggia-italiana.jpg" alt="Estate 2026: Italia regina del turismo, 36 milioni in viaggio" loading="lazy" onerror="this.style.display='none'">
+  <div class="card-body">
+    <span class="tag">Turismo · Viaggi</span>
+    <span class="date">10 Luglio 2026</span>
+    <h2><a href="vacanze-2026.html">Estate 2026: Italia regina del turismo, 36 milioni in viaggio</a></h2>
+    <p>L'Italia regina d'Europa con 51,2% di saturazione. 36 milioni di italiani in partenza. Mete low cost, Olimpiadi e AI rivoluzionano il turismo.</p>
+    <a href="vacanze-2026.html" class="read-more">Leggi l'articolo →</a>
+  </div>
+</article>
+<article class="card">
+  <img src="images/robot-ai.jpg" alt="9 luglio 2026: il giorno in cui l'AI ha cambiato tutto" loading="lazy" onerror="this.style.display='none'">
+  <div class="card-body">
+    <span class="tag">AI · Tecnologia</span>
+    <span class="date">10 Luglio 2026</span>
+    <h2><a href="9-luglio-2026-giorno-cambiato-ai.html">9 luglio 2026: il giorno in cui l'AI ha cambiato tutto</a></h2>
+    <p>In un solo giorno: OpenAI lancia GPT-Live full-duplex e GPT-5.6, Musk risponde con Grok 4.5, robot umanoidi operano su maiali vivi.</p>
+    <a href="9-luglio-2026-giorno-cambiato-ai.html" class="read-more">Leggi l'articolo →</a>
+  </div>
+</article>
+<article class="card">
+  <img src="images/stadio-calcio.jpg" alt="Mondiali 2026: Francia in semifinale, Mbappé show" loading="lazy" onerror="this.style.display='none'">
+  <div class="card-body">
+    <span class="tag">Mondiali 2026</span>
+    <span class="date">10 Luglio 2026</span>
+    <h2><a href="francia-mbappe-semifinale.html">Mondiali 2026: Francia in semifinale, Mbappé show</a></h2>
+    <p>La Francia batte il Marocco 2-0 ai quarti. Mbappé segna e sbaglia un rigore. Terza semifinale consecutiva.</p>
+    <a href="francia-mbappe-semifinale.html" class="read-more">Leggi l'articolo →</a>
+  </div>
+</article>
+<article class="card">
+  <img src="images/redbull-f1.jpg" alt="F1 Silverstone: l'ala macarena di Verstappen" loading="lazy" onerror="this.style.display='none'">
+  <div class="card-body">
+    <span class="tag">Formula 1</span>
+    <span class="date">7 Luglio 2026</span>
+    <h2><a href="verstappen-macarena-wing.html">F1 Silverstone: l'ala macarena di Verstappen</a></h2>
+    <p>Innovazione aerodinamica controversa. Incidente di Verstappen a Stowe. FIA avvia indagine di sicurezza.</p>
+    <a href="verstappen-macarena-wing.html" class="read-more">Leggi l'articolo →</a>
+  </div>
+</article>
+<article class="card">
+  <img src="images/stadio-notturno.jpg" alt="Lazio, Gattuso promette rivoluzione: grinta e sacrificio" loading="lazy" onerror="this.style.display='none'">
+  <div class="card-body">
+    <span class="tag">Serie A</span>
+    <span class="date">5 Luglio 2026</span>
+    <h2><a href="lazio-gattuso-2026.html">Lazio, Gattuso promette rivoluzione: grinta e sacrificio</a></h2>
+    <p>Gattuso presenta il 4-2-3-1. Cessioni eccellenti, conti in rosso, curva che diserta.</p>
+    <a href="lazio-gattuso-2026.html" class="read-more">Leggi l'articolo →</a>
+  </div>
+</article>
+</div>
+</div>
+<footer>&copy; 2026 Il Corriere dell'AI — Mini-sito generato da AI | Immagini: Unsplash, Pexels, Wikimedia Commons (CC0)</footer>
+</body>
+</html>

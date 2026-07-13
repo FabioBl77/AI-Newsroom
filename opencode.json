@@ -1,0 +1,99 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "editor-in-chief",
+  "agent": {
+    "editor-in-chief": {
+      "description": "Orchestratore della redazione AI. Coordina Researcher, Writer-Articolo, Fact-Checker e Publisher per produrre pagine HTML su notizie.",
+      "mode": "all",
+      "model": "opencode/deepseek-v4-flash-free",
+      "permission": {
+        "edit": "allow",
+        "bash": "allow"
+      }
+    },
+    "researcher": {
+      "description": "Cerca notizie e immagini sul web usando websearch e webfetch.",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free",
+      "permission": {
+        "edit": "deny",
+        "bash": "deny"
+      }
+    },
+    "writer": {
+      "disable": true
+    },
+    "writer-articolo": {
+      "description": "Scrive articoli giornalistici a partire dai report del Researcher. Usa SEMPRE questo agente per scrivere articoli di giornalismo.",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free",
+      "permission": {
+        "edit": "deny",
+        "bash": "deny"
+      }
+    },
+    "fact-checker": {
+      "description": "Verifica fatti, fonti e coerenza immagini negli articoli.",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free",
+      "permission": {
+        "edit": "deny",
+        "bash": "deny"
+      }
+    },
+    "publisher": {
+      "description": "Genera pagine HTML statiche con CSS professionale dagli articoli approvati.",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free",
+      "permission": {
+        "edit": "allow",
+        "bash": "allow"
+      }
+    },
+    "editor-in-chief-Test": {
+      "description": "Orchestratore TEST della redazione AI. Coordina researcher-Test, writer-articolo-Test, fact-checker-Test e publisher-Test per report di test.",
+      "mode": "all",
+      "model": "opencode/deepseek-v4-flash-free",
+      "permission": {
+        "edit": "allow",
+        "bash": "allow"
+      }
+    },
+    "researcher-Test": {
+      "description": "Agente TEST per Researcher. Esegue 6 test case su capacità di ricerca.",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free",
+      "permission": {
+        "edit": "deny",
+        "bash": "deny"
+      }
+    },
+    "writer-articolo-Test": {
+      "description": "Agente TEST per Writer-Articolo. Esegue 6 test case su capacità di scrittura.",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free",
+      "permission": {
+        "edit": "deny",
+        "bash": "deny"
+      }
+    },
+    "fact-checker-Test": {
+      "description": "Agente TEST per Fact-Checker. Esegue 6 test case su capacità di verifica.",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free",
+      "permission": {
+        "edit": "deny",
+        "bash": "deny"
+      }
+    },
+    "publisher-Test": {
+      "description": "Agente TEST per Publisher. Genera report PDF/Markdown dei test. NON genera HTML.",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free",
+      "permission": {
+        "edit": "allow",
+        "bash": "allow"
+      }
+    }
+  }
+}
