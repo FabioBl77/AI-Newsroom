@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimana dell'AI: OpenAI, Anthropic, Meta e SpaceXAI si sfidano in 72 ore di annunci</title>
+    <meta name="description" content="Quattro big tech hanno scelto la stessa finestra per i loro annunci più importanti. Tra il 6 e il 9 luglio 2026, OpenAI, Meta, Anthropic e SpaceXAI hanno rilasciato prodotti che ridisegnano la mappa dell'intelligenza artificiale.">
+    <meta name="keywords" content="AI, GPT-5.6, GPT-Live, J-Space, Claude, Muse Image, Grok 4.5, OpenAI, Anthropic, Meta, SpaceXAI">
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Settimana dell'AI: OpenAI, Anthropic, Meta e SpaceXAI si sfidano in 72 ore di annunci",
+        "description": "Quattro big tech hanno scelto la stessa finestra per i loro annunci più importanti. Tra il 6 e il 9 luglio 2026, OpenAI, Meta, Anthropic e SpaceXAI hanno rilasciato prodotti che ridisegnano la mappa dell'intelligenza artificiale.",
+        "datePublished": "2026-07-09T18:00:00+02:00",
+        "dateModified": "2026-07-09T18:00:00+02:00",
+        "author": {
+            "@type": "Organization",
+            "name": "OpenCode Press"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OpenCode Press"
+        },
+        "image": "https://www.repstatic.it/content/nazionale/img/2026/07/08/223529319-c171d8bf-30ea-4bfb-9568-38811a174a77.jpg",
+        "articleSection": "Tecnologia",
+        "keywords": "AI, GPT-5.6, GPT-Live, J-Space, Claude, Muse Image, Grok 4.5, OpenAI, Anthropic, Meta, SpaceXAI"
+    }
+    </script>
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { font-size: 18px; scroll-behavior: smooth; }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: #f9f9f9;
+            color: #1a1a1a;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ===== LAYOUT ===== */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== HEADER ===== */
+        .site-header {
+            background: #ffffff;
+            border-bottom: 3px solid #1a1a1a;
+            padding: 24px 0 16px;
+            margin-bottom: 0;
+        }
+
+        .site-header .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .site-name {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: #1a1a1a;
+        }
+
+        .site-name span {
+            color: #c0392b;
+        }
+
+        .header-meta {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 0.75rem;
+            color: #666;
+            margin-top: 6px;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .header-meta a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .header-meta a:hover {
+            color: #c0392b;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            margin: 0;
+            background: #ffffff;
+        }
+
+        .hero figure {
+            margin: 0;
+            position: relative;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            max-height: 520px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero figcaption {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 0.7rem;
+            color: #888;
+            padding: 8px 24px 12px;
+            max-width: 800px;
+            margin: 0 auto;
+            font-style: italic;
+        }
+
+        /* ===== ARTICLE ===== */
+        .article-wrapper {
+            background: #ffffff;
+            padding-top: 0;
+        }
+
+        .article-body {
+            padding: 32px 0 48px;
+        }
+
+        /* Headline */
+        .article-headline {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 1.15;
+            letter-spacing: -0.03em;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+
+        .article-subhead {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 400;
+            line-height: 1.4;
+            color: #555;
+            margin-bottom: 24px;
+        }
+
+        .byline {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .byline .author {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        .byline .separator {
+            color: #ccc;
+        }
+
+        .byline .date {
+            color: #888;
+        }
+
+        .share-bar {
+            display: flex;
+            gap: 10px;
+            padding: 16px 0 24px;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 28px;
+        }
+
+        .share-bar a {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 0.75rem;
+            text-decoration: none;
+            color: #fff;
+            background: #1a1a1a;
+            padding: 6px 14px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .share-bar a:hover {
+            background: #c0392b;
+        }
+
+        /* Lead paragraph */
+        .lead {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #2a2a2a;
+            margin-bottom: 32px;
+            font-weight: 400;
+            border-left: 4px solid #c0392b;
+            padding-left: 20px;
+        }
+
+        /* Body paragraphs */
+        .article-body p {
+            margin-bottom: 22px;
+            font-size: 1rem;
+            line-height: 1.75;
+        }
+
+        .article-body h2 {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-top: 44px;
+            margin-bottom: 16px;
+            line-height: 1.25;
+            color: #1a1a1a;
+            letter-spacing: -0.02em;
+        }
+
+        .article-body h3 {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Inline images */
+        .inline-image {
+            margin: 36px 0 32px;
+        }
+
+        .inline-image figure {
+            margin: 0;
+        }
+
+        .inline-image img {
+            width: 100%;
+            height: auto;
+            max-height: 450px;
+            object-fit: cover;
+            display: block;
+            border-radius: 2px;
+        }
+
+        .inline-image figcaption {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 0.7rem;
+            color: #888;
+            padding-top: 8px;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        /* Blockquote / Highlight */
+        .highlight-box {
+            background: #f5f5f5;
+            border-left: 4px solid #c0392b;
+            padding: 20px 24px;
+            margin: 32px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0 !important;
+            font-size: 0.95rem;
+        }
+
+        /* ===== SOURCES ===== */
+        .sources-section {
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        .sources-section h3 {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #888;
+            margin-bottom: 16px;
+        }
+
+        .sources-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-list li {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 0.85rem;
+            color: #555;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        .sources-list li:last-child {
+            border-bottom: none;
+        }
+
+        .sources-list li::before {
+            content: "→";
+            color: #c0392b;
+            font-weight: 700;
+        }
+
+        /* Metadata table */
+        .meta-table {
+            margin-top: 32px;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 0.8rem;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .meta-table td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #f0f0f0;
+            vertical-align: top;
+        }
+
+        .meta-table td:first-child {
+            font-weight: 700;
+            color: #888;
+            width: 35%;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            font-size: 0.7rem;
+        }
+
+        .meta-table td:last-child {
+            color: #333;
+        }
+
+        /* ===== FOOTER ===== */
+        .site-footer {
+            background: #1a1a1a;
+            color: #aaa;
+            padding: 40px 0 32px;
+            margin-top: 0;
+        }
+
+        .site-footer .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 12px;
+        }
+
+        .footer-brand {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .footer-brand span {
+            color: #c0392b;
+        }
+
+        .footer-text {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 0.75rem;
+            color: #888;
+            line-height: 1.6;
+        }
+
+        .footer-text a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            color: #fff;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 640px) {
+            html { font-size: 16px; }
+
+            .container {
+                padding: 0 16px;
+            }
+
+            .article-headline {
+                font-size: 1.6rem;
+            }
+
+            .article-subhead {
+                font-size: 0.95rem;
+            }
+
+            .site-name {
+                font-size: 1.2rem;
+            }
+
+            .lead {
+                font-size: 1.05rem;
+                padding-left: 14px;
+            }
+
+            .article-body h2 {
+                font-size: 1.3rem;
+            }
+
+            .hero img {
+                max-height: 300px;
+            }
+
+            .byline {
+                font-size: 0.7rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+            }
+
+            .byline .separator {
+                display: none;
+            }
+
+            .share-bar {
+                flex-wrap: wrap;
+            }
+
+            .meta-table td:first-child {
+                width: 40%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .article-headline {
+                font-size: 1.35rem;
+            }
+
+            .hero img {
+                max-height: 220px;
+            }
+
+            .inline-image img {
+                max-height: 280px;
+            }
+        }
+
+        /* ===== PRINT ===== */
+        @media print {
+            body { background: #fff; }
+            .site-header { border-bottom-color: #000; }
+            .share-bar { display: none; }
+            .site-footer { background: #fff; color: #000; border-top: 2px solid #000; }
+            .footer-brand { color: #000; }
+            .footer-text { color: #333; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+    <div class="container">
+        <div class="site-name">OpenCode <span>Press</span></div>
+        <div class="header-meta">
+            <span>Giovedì, 9 luglio 2026</span>
+            <span>·</span>
+            <a href="#">Tecnologia</a>
+            <span>·</span>
+            <a href="#">AI & Machine Learning</a>
+        </div>
+    </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+    <figure>
+        <img
+            src="https://www.repstatic.it/content/nazionale/img/2026/07/08/223529319-c171d8bf-30ea-4bfb-9568-38811a174a77.jpg"
+            alt="Illustrazione dell'intelligenza artificiale al centro della settimana di annunci"
+            loading="eager"
+            onerror="this.style.display='none'"
+        >
+        <figcaption>L'intelligenza artificiale al centro di una settimana senza precedenti per annunci e innovazioni. &mdash; Foto: Repubblica</figcaption>
+    </figure>
+</div>
+
+<!-- ===== ARTICLE ===== -->
+<div class="article-wrapper">
+    <article class="container article-body" itemscope itemtype="https://schema.org/Article">
+
+        <!-- Title & Meta -->
+        <h1 class="article-headline" itemprop="headline">Settimana dell&rsquo;AI: OpenAI, Anthropic, Meta e SpaceXAI si sfidano in 72 ore di annunci</h1>
+
+        <p class="article-subhead">Dai modelli di frontiera alla mente artificiale: mai così tante novità in così poco tempo. Da GPT-5.6 alla scoperta del J-Space di Claude, passando per immagini su WhatsApp e un nuovo Grok tutto coding.</p>
+
+        <div class="byline">
+            <span class="author" itemprop="author">Redazione OpenCode Press</span>
+            <span class="separator">·</span>
+            <span class="date">
+                <time datetime="2026-07-09T18:00:00+02:00" itemprop="datePublished">9 luglio 2026</time>
+            </span>
+            <span class="separator">·</span>
+            <span class="date" itemprop="articleSection">Tecnologia</span>
+        </div>
+
+        <div class="share-bar">
+            <a href="#">Condividi</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Facebook</a>
+        </div>
+
+        <!-- LEAD -->
+        <p class="lead" itemprop="description">
+            Quattro big tech hanno scelto la stessa finestra per i loro annunci più importanti. Tra il 6 e il 9 luglio 2026, OpenAI, Meta, Anthropic e SpaceXAI hanno rilasciato prodotti che ridisegnano la mappa dell&rsquo;intelligenza artificiale. Il risultato è una settimana che gli analisti già chiamano &ldquo;la settimana dell&rsquo;AI&rdquo;.
+        </p>
+
+        <!-- SECTION 1: GPT-5.6 -->
+        <h2>GPT-5.6: tre anime per un modello</h2>
+        <p>Il 9 luglio OpenAI ha rilasciato <strong>GPT-5.6</strong>, il primo modello di frontiera americano ad ottenere l'approvazione governativa dopo l'ordine esecutivo del 2 giugno 2026. Tre le versioni disponibili: <strong>Sol</strong> (modello di punta), <strong>Terra</strong> (fascia media) e <strong>Luna</strong> (versione economica). Una strategia che replica il posizionamento già visto con Anthropic e i suoi modelli Sonnet/Haiku/Opus, ma con un'ambizione dichiarata: coprire ogni fascia di mercato con un'unica architettura di base.</p>
+
+        <!-- SECTION 2: GPT-Live -->
+        <h2>GPT-Live: la voce diventa full-duplex</h2>
+        <p>Il giorno prima, l'8 luglio, OpenAI ha lanciato <strong>GPT-Live</strong>, la nuova interfaccia vocale full-duplex per ChatGPT: ascolta e parla simultaneamente, eliminando i tempi morti della conversazione. Disponibile in versione premium e in una <strong>mini gratuita per tutti</strong>, GPT-Live punta a capitalizzare sugli oltre <strong>150 milioni di utenti</strong> che già utilizzano le funzioni vocali della piattaforma.</p>
+
+        <div class="inline-image">
+            <figure>
+                <img
+                    src="https://www.hwupgrade.it/i/n/ChatGPTDown_160.jpg"
+                    alt="Schermata di GPT-Live, la nuova interfaccia vocale full-duplex di ChatGPT"
+                    loading="lazy"
+                    onerror="this.style.display='none'"
+                >
+                <figcaption>GPT-Live introduce la conversazione vocale simultanea, eliminando l'attesa tra domanda e risposta. &mdash; Fonte: hwupgrade.it</figcaption>
+            </figure>
+        </div>
+
+        <!-- SECTION 3: J-Space -->
+        <h2>Anthropic J-Space: la scoperta che cambia tutto</h2>
+        <p>Ma l'annuncio più sorprendente arriva da Anthropic. Il 6 luglio il team di ricerca ha rivelato l'esistenza del <strong>J-Space</strong>, uno spazio di pensiero interno emerso spontaneamente nel modello Claude. Grazie alla tecnica <strong>J-Lens</strong>, i ricercatori possono oggi &ldquo;leggere&rdquo; i pensieri silenziosi dell'AI &mdash; rappresentazioni intermedie che il modello elabora prima di formulare una risposta.</p>
+        <p>Il dato più impressionante? Modificando il J-Space si alterano <strong>causalmente</strong> le risposte di Claude. Non si tratta quindi di una semplice osservazione passiva, ma di un vero e proprio controllo sui processi interni del modello. Un passo che avvicina l'AI trasparente e apre interrogativi etici enormi.</p>
+
+        <div class="inline-image">
+            <figure>
+                <img
+                    src="https://www-cdn.anthropic.com/images/4zrzovbb/website/0ab926f491beb999ece405a03cc7684730156905-3824x2640.png"
+                    alt="Visualizzazione del J-Space di Claude: i pensieri silenziosi del modello"
+                    loading="lazy"
+                    onerror="this.style.display='none'"
+                >
+                <figcaption>La visualizzazione del J-Space di Claude: i ricercatori possono osservare e modificare i &ldquo;pensieri silenziosi&rdquo; del modello. &mdash; Fonte: Anthropic</figcaption>
+            </figure>
+        </div>
+
+        <div class="highlight-box">
+            <p><strong>Il punto di svolta.</strong> Se i ricercatori possono oggi leggere e modificare i pensieri di Claude, la domanda non è più <em>se</em> riusciremo a capire come ragiona un modello, ma <em>cosa</em> faremo con questa conoscenza.</p>
+        </div>
+
+        <!-- SECTION 4: Meta Muse Image -->
+        <h2>Meta Muse Image: l&rsquo;AI arriva in chat</h2>
+        <p>Il 7 luglio Meta ha lanciato <strong>Muse Image</strong>, il sistema di generazione immagini sviluppato dai Meta Superintelligence Labs. Integrato direttamente in WhatsApp, Instagram e Meta AI, Muse Image arriva con <strong>Content Seal</strong>, un sistema di watermarking progettato per tracciare l'origine dei contenuti generati. Una mossa che punta a contrastare la disinformazione, in un momento in cui la generazione visuale diventa sempre più accessibile.</p>
+
+        <!-- SECTION 5: Grok 4.5 -->
+        <h2>SpaceXAI Grok 4.5: potenza a costo ridotto</h2>
+        <p>Chiude la settimana <strong>SpaceXAI Grok 4.5</strong>, rilasciato l'8 luglio. Il modello si posiziona come &ldquo;Opus-class&rdquo; ma a un costo drasticamente inferiore: <strong>$2 per milione di token in input (e $6 per milione di token in output)</strong> contro i <strong>$5 per milione di token in input (e $25 per milione di token in output) di Opus 4.7</strong>. Ottimizzato per il coding, Grok 4.5 è il primo modello rilasciato dopo la quotazione in borsa di SpaceXAI e l'acquisizione di Cursor, l'IDE AI-powered. Un segnale chiaro: SpaceXAI vuole competere sul terreno dello sviluppo software.</p>
+
+        <!-- SECTION 6: Prospettive -->
+        <h2>Prospettive</h2>
+        <p>Mai così tante aziende avevano concentrato lanci di questa portata in una singola finestra temporale. Se da un lato la competizione accelera l'innovazione &mdash; modelli migliori, costi più bassi, nuove interfacce &mdash; dall'altro emergono domande che andranno ben oltre il semplice confronto tecnologico.</p>
+        <p>La scoperta del J-Space, in particolare, potrebbe rappresentare il primo vero punto di svolta nella comprensione dei meccanismi interni dell'AI. Se i ricercatori possono oggi leggere e modificare i pensieri di Claude, la domanda non è più <em>se</em> riusciremo a capire come ragiona un modello, ma <em>cosa</em> faremo con questa conoscenza.</p>
+
+        <!-- ===== SOURCES ===== -->
+        <div class="sources-section">
+            <h3>Fonti</h3>
+            <ul class="sources-list">
+                <li>OpenAI &ndash; Rilascio GPT-5.6 (9 luglio 2026) e GPT-Live (8 luglio 2026)</li>
+                <li>Anthropic &ndash; Pubblicazione ricerca J-Space e J-Lens (6 luglio 2026)</li>
+                <li>Meta &ndash; Annuncio Muse Image e Content Seal (7 luglio 2026)</li>
+                <li>SpaceXAI &ndash; Rilascio Grok 4.5 (8 luglio 2026)</li>
+                <li>Ordine esecutivo AI &ndash; 2 giugno 2026, Governo USA</li>
+            </ul>
+        </div>
+
+        <!-- Metadata Table -->
+        <table class="meta-table">
+            <tr>
+                <td>Genere</td>
+                <td>Reportage tecnologico</td>
+            </tr>
+            <tr>
+                <td>Periodo</td>
+                <td>6&ndash;9 luglio 2026</td>
+            </tr>
+            <tr>
+                <td>Parole chiave</td>
+                <td>AI, GPT-5.6, GPT-Live, J-Space, Claude, Muse Image, Grok 4.5, OpenAI, Anthropic, Meta, SpaceXAI</td>
+            </tr>
+            <tr>
+                <td>Livello</td>
+                <td>Generalista / Appassionati di tecnologia</td>
+            </tr>
+        </table>
+
+        <meta itemprop="image" content="https://www.repstatic.it/content/nazionale/img/2026/07/08/223529319-c171d8bf-30ea-4bfb-9568-38811a174a77.jpg">
+        <meta itemprop="publisher" content="OpenCode Press">
+    </article>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-brand">OpenCode <span>Press</span></div>
+        <div class="footer-text">
+            &copy; 2026 OpenCode Press &mdash; Tutti i diritti riservati.<br>
+            Pubblicato il <time datetime="2026-07-09">9 luglio 2026</time> &middot;
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Cookie</a> &middot;
+            <a href="#">Chi siamo</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

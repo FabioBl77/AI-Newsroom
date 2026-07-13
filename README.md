@@ -57,7 +57,7 @@ opencode .
 ```
 ├── .opencode/
 │   └── agents/          # Configurazioni agenti
-├── sito/
+├── docs/
 │   ├── index.html       # Home page
 │   ├── *.html           # Pagine articoli
 │   └── images/          # Immagini copyright-free

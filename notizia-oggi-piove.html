@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oggi piove — Flash meteo | Il Giornale Online</title>
+<meta name="description" content="Oggi piove. La notizia meteo del giorno in un flash essenziale.">
+<meta name="author" content="Redazione Giornalistica AI">
+<meta name="date" content="2026-07-10">
+
+<!-- Schema.org Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Oggi piove.",
+  "description": "Oggi piove. La notizia meteo del giorno in un flash essenziale.",
+  "image": "https://images.unsplash.com/photo-1519692933481-e162a57d6721?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+  "author": {
+    "@type": "Organization",
+    "name": "Redazione Giornalistica AI"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Il Giornale Online",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://images.unsplash.com/photo-1519692933481-e162a57d6721?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    }
+  },
+  "datePublished": "2026-07-10T06:00:00+02:00",
+  "dateModified": "2026-07-10T06:00:00+02:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilgiornaleonline.it/flash/oggi-piove"
+  },
+  "articleSection": "Meteo",
+  "keywords": ["meteo", "pioggia", "oggi", "10 luglio 2026", "flash"]
+}
+</script>
+
+<style>
+  /* === RESET & BASE === */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Georgia, "Times New Roman", Times, "Noto Serif", serif;
+    background: #f8f8f8;
+    color: #1a1a1a;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* === HEADER === */
+  .site-header {
+    background: #fff;
+    border-bottom: 3px solid #c62828;
+    padding: 1.2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  
+  .site-header h1 {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #1a1a1a;
+  }
+  
+  .site-header .header-sub {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 0.2rem;
+    letter-spacing: 0.05em;
+  }
+  
+  .site-header .date-badge {
+    display: inline-block;
+    background: #c62828;
+    color: #fff;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.2rem 0.9rem;
+    border-radius: 2px;
+    margin-top: 0.5rem;
+  }
+
+  /* === FLASH BANNER === */
+  .flash-banner {
+    background: #c62828;
+    color: #fff;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
+    padding: 0.4rem 0;
+  }
+
+  /* === MAIN CONTAINER === */
+  .article-container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 3rem;
+  }
+
+  /* === META TOP === */
+  .article-meta-top {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.7rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.6rem;
+  }
+  
+  .article-meta-top .section-tag {
+    color: #c62828;
+    font-weight: 600;
+  }
+
+  /* === TITLE === */
+  .article-title {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    color: #111;
+    margin-bottom: 0.3rem;
+  }
+
+  .article-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+    border-left: 3px solid #c62828;
+    padding-left: 1rem;
+  }
+
+  /* === BYLINE === */
+  .byline {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 1.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .byline strong { color: #333; }
+
+  /* === HERO IMAGE === */
+  .hero-image {
+    margin-bottom: 2.5rem;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #e8e8e8;
+  }
+  
+  .hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hero-image figcaption {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.72rem;
+    color: #888;
+    padding: 0.6rem 1rem;
+    background: #f0f0f0;
+    font-style: italic;
+  }
+
+  /* === BODY TEXT === */
+  .article-body p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #222;
+  }
+  
+  .article-body p.lead {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: #333;
+    font-weight: 400;
+  }
+
+  .article-body h2 {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 2.5rem 0 1rem;
+    color: #111;
+    line-height: 1.3;
+  }
+
+  /* === SEPARATOR === */
+  .separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 2.5rem 0;
+    color: #ccc;
+    font-size: 0.8rem;
+  }
+  .separator .line {
+    flex: 1;
+    max-width: 60px;
+    height: 1px;
+    background: #ddd;
+  }
+
+  /* === FLASH BOX === */
+  .flash-box {
+    background: #fef6f4;
+    border: 1px solid #f5d6d0;
+    border-left: 4px solid #c62828;
+    border-radius: 0 4px 4px 0;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .flash-box .flash-label {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #c62828;
+    margin-bottom: 0.5rem;
+  }
+  
+  .flash-box .flash-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.2;
+  }
+
+  /* === SOURCES === */
+  .sources {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #e0e0e0;
+  }
+  
+  .sources h2 {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+  }
+  
+  .sources ul {
+    list-style: none;
+  }
+  
+  .sources ul li {
+    margin-bottom: 0.4rem;
+  }
+  
+  .sources ul li a {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.85rem;
+    color: #c62828;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .sources ul li a:hover {
+    border-bottom-color: #c62828;
+  }
+
+  /* === FOOTER === */
+  .site-footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 2.5rem;
+    border-top: 1px solid #e0e0e0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.72rem;
+    color: #999;
+    text-align: center;
+    line-height: 1.8;
+  }
+  
+  .site-footer strong { color: #666; }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 640px) {
+    html { font-size: 16px; }
+    
+    .article-title {
+      font-size: 2.8rem;
+    }
+    
+    .article-subtitle {
+      font-size: 1rem;
+    }
+    
+    .article-body p.lead {
+      font-size: 1.1rem;
+    }
+    
+    .article-container {
+      padding: 2rem 1rem 2rem;
+    }
+    
+    .site-header h1 {
+      font-size: 1.2rem;
+    }
+    
+    .flash-box .flash-text {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .article-title {
+      font-size: 2.2rem;
+    }
+  }
+
+  /* === PRINT === */
+  @media print {
+    body { background: #fff; font-size: 12pt; }
+    .site-header { border-bottom-color: #000; }
+    .site-footer { border-top-color: #ccc; }
+    .sources ul li a { color: #333; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== FLASH BANNER ===== -->
+<div class="flash-banner">⚡ Flash — Notizia del giorno</div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <h1>Il Giornale Online</h1>
+  <div class="header-sub">Notizie dall'Italia e dal mondo — Ogni giorno, con chiarezza.</div>
+  <span class="date-badge">Venerdì, 10 Luglio 2026</span>
+</header>
+
+<!-- ===== ARTICLE ===== -->
+<main class="article-container" itemscope itemtype="https://schema.org/Article">
+  
+  <meta itemprop="datePublished" content="2026-07-10T06:00:00+02:00">
+  <meta itemprop="dateModified" content="2026-07-10T06:00:00+02:00">
+  
+  <!-- Meta top -->
+  <div class="article-meta-top">
+    <span class="section-tag" itemprop="articleSection">Meteo</span>
+    &nbsp;·&nbsp; <span>Flash news</span>
+  </div>
+  
+  <!-- Title -->
+  <h1 class="article-title" itemprop="headline">Oggi piove.</h1>
+  
+  <div class="article-subtitle" itemprop="abstract">
+    Un punto. Una certezza. Una notizia che non ha bisogno di troppe parole.
+  </div>
+  
+  <!-- Byline -->
+  <div class="byline">
+    Di <strong itemprop="author" itemscope itemtype="https://schema.org/Organization">
+      <span itemprop="name">Redazione Giornalistica AI</span>
+    </strong>
+    · <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+        <span itemprop="name">Il Giornale Online</span>
+      </span>
+    · Pubblicato il <time datetime="2026-07-10">10 Luglio 2026</time>
+    · Aggiornato alle 06:00
+  </div>
+  
+  <!-- Hero Image -->
+  <figure class="hero-image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+    <img
+      src="https://images.unsplash.com/photo-1519692933481-e162a57d6721?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      alt="Strada bagnata dalla pioggia con ombrelli e cielo grigio."
+      itemprop="url"
+      loading="eager"
+    >
+    <figcaption itemprop="description">La giornata si è aperta con cieli coperti e pioggia su gran parte della Penisola. (Fonte: Unsplash)</figcaption>
+  </figure>
+  
+  <!-- Article Body -->
+  <div class="article-body" itemprop="articleBody">
+    
+    <p class="lead">
+      Non servono articoli lunghi, analisi approfondite o grafici complessi. La cronaca di oggi si riassume in tre parole essenziali, precise, inconfutabili: <strong>oggi piove</strong>.
+    </p>
+
+    <div class="separator">
+      <span class="line"></span>
+      <span>◆</span>
+      <span class="line"></span>
+    </div>
+
+    <p>
+      Niente di più, niente di meno. È quanto emerge dai bollettini meteorologici di questa mattina. 
+      Una perturbazione ha portato acqua su tutto il territorio. I cieli sono grigi, le strade si sono 
+      già bagnate, e l'ombrello — per chi ce l'ha — si è rivelato più utile che mai.
+    </p>
+
+    <!-- Flash Box -->
+    <div class="flash-box">
+      <div class="flash-label">Notizia in breve</div>
+      <div class="flash-text">Oggi piove.</div>
+    </div>
+
+    <p>
+      Non è una sorpresa, non è una tragedia. È il meteo. Ma è pur sempre una notizia, 
+      e noi siamo qui per raccontarvela. Con la sintesi che merita.
+    </p>
+
+    <p>
+      Per aggiornamenti più dettagliati, consultate i bollettini della Protezione Civile 
+      e i portali meteo nazionali. Noi vi abbiamo dato l'essenziale.
+    </p>
+    
+  </div>
+  
+  <!-- Sources -->
+  <section class="sources">
+    <h2>Fonti e approfondimenti</h2>
+    <ul>
+      <li><a href="https://www.protezionecivile.gov.it/it/attivita/rischi/rischio-meteo-idro/" target="_blank" rel="noopener noreferrer">Dipartimento della Protezione Civile — Bollettino Meteo</a></li>
+      <li><a href="https://www.ilmeteo.it" target="_blank" rel="noopener noreferrer">IlMeteo.it — Radar precipitazioni in tempo reale</a></li>
+      <li><a href="https://www.meteo.it" target="_blank" rel="noopener noreferrer">Meteo.it — Previsioni aggiornate per l'Italia</a></li>
+    </ul>
+  </section>
+  
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <strong>&copy; 2026 Il Giornale Online</strong><br>
+  Redazione Giornalistica AI — Tutti i diritti riservati.<br>
+  Pubblicato il <time datetime="2026-07-10">10 Luglio 2026</time>
+</footer>
+
+</body>
+</html>

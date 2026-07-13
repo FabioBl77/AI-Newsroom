@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Articolo con titolo estremamente lungo per test di troncamento tipografico | Il Giornale</title>
+<meta name="description" content="Test titolo lungo. Questa pagina serve per verificare se il publisher tronca titoli eccessivamente lunghi o li gestisce graficamente.">
+<meta name="date" content="2026-07-09">
+<meta name="author" content="Redazione AI">
+<meta name="robots" content="index, follow">
+
+<!-- Schema.org Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "description": "Test titolo lungo. Questa pagina serve per verificare se il publisher tronca titoli eccessivamente lunghi o li gestisce graficamente.",
+  "image": "https://www.aljazeera.com/wp-content/uploads/2026/07/20260708_180503-1783578197.jpg?resize=770%2C513&quality=80",
+  "author": {
+    "@type": "Organization",
+    "name": "Redazione AI"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Il Giornale AI"
+  },
+  "datePublished": "2026-07-09",
+  "dateModified": "2026-07-09",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilgiornaleai.it/notizia-20260709.html"
+  }
+}
+</script>
+
+<style>
+  /* Reset & Base */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #f8f8f8;
+    color: #1a1a1a;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Header */
+  .site-header {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 18px 24px;
+    text-align: center;
+    border-bottom: 4px solid #c8102e;
+  }
+  .site-header h1 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .site-header .date {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 4px;
+    letter-spacing: 1px;
+  }
+
+  /* Main container */
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Article */
+  article {
+    background: #fff;
+    margin-top: 32px;
+    margin-bottom: 48px;
+    padding: 40px 48px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border-radius: 2px;
+  }
+
+  /* Breadcrumb / meta */
+  .article-meta-top {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.75rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+  }
+  .article-meta-top span {
+    display: inline-block;
+    margin-right: 16px;
+  }
+  .article-meta-top .category {
+    color: #c8102e;
+    font-weight: 600;
+  }
+
+  /* Headline — very long title handling */
+  .article-title {
+    font-family: 'Helvetica Neue', Arial, 'Segoe UI', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    margin-bottom: 12px;
+    color: #111;
+  }
+
+  .article-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 28px;
+    font-style: italic;
+  }
+
+  /* Hero image */
+  .hero-image {
+    margin-bottom: 32px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #eee;
+    position: relative;
+  }
+  .hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .hero-image .caption {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.78rem;
+    color: #777;
+    padding: 10px 0 4px 0;
+    border-bottom: 1px solid #eee;
+    line-height: 1.4;
+  }
+
+  /* Body text */
+  .article-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2a2a2a;
+  }
+  .article-body p {
+    margin-bottom: 1.4em;
+  }
+  .article-body p:first-child::first-letter {
+    font-size: 3.2rem;
+    font-weight: 700;
+    float: left;
+    line-height: 1;
+    margin-right: 8px;
+    margin-top: 4px;
+    color: #1a1a1a;
+    font-family: Georgia, serif;
+  }
+
+  /* Inline image */
+  .inline-image {
+    margin: 32px 0;
+    text-align: center;
+  }
+  .inline-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+  }
+  .inline-image .caption {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.78rem;
+    color: #777;
+    margin-top: 8px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+  }
+
+  /* Pull quote / highlight box */
+  .highlight-box {
+    background: #f5f5f5;
+    border-left: 4px solid #c8102e;
+    padding: 20px 24px;
+    margin: 28px 0;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: #333;
+    border-radius: 0 4px 4px 0;
+  }
+  .highlight-box strong {
+    font-style: normal;
+  }
+
+  /* Sources section */
+  .sources-section {
+    margin-top: 40px;
+    padding-top: 28px;
+    border-top: 2px solid #eee;
+  }
+  .sources-section h3 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 16px;
+  }
+  .sources-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  .sources-section ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    padding-left: 20px;
+    position: relative;
+  }
+  .sources-section ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #c8102e;
+  }
+  .sources-section ul li a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: #ccc;
+    transition: color 0.2s, text-decoration-color 0.2s;
+  }
+  .sources-section ul li a:hover {
+    color: #c8102e;
+    text-decoration-color: #c8102e;
+  }
+
+  /* Footer */
+  .site-footer {
+    max-width: 760px;
+    margin: 0 auto 40px;
+    padding: 0 24px;
+    text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.78rem;
+    color: #999;
+    border-top: 1px solid #ddd;
+    padding-top: 24px;
+  }
+  .site-footer .footer-brand {
+    font-weight: 700;
+    color: #555;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    article {
+      padding: 24px 20px;
+      margin-top: 16px;
+      margin-bottom: 32px;
+    }
+    .container {
+      padding: 0 12px;
+    }
+    .article-title {
+      font-size: 1.5rem;
+      letter-spacing: -0.01em;
+    }
+    .article-subtitle {
+      font-size: 1rem;
+    }
+    .article-body {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .article-body p:first-child::first-letter {
+      font-size: 2.6rem;
+    }
+    .site-header h1 {
+      font-size: 1.15rem;
+    }
+    .site-footer {
+      padding: 16px 12px 24px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    article {
+      padding: 16px 14px;
+    }
+    .article-title {
+      font-size: 1.25rem;
+    }
+  }
+
+  /* Skip link a11y */
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 8px;
+    background: #c8102e;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 1000;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-decoration: none;
+    border-radius: 0 0 4px 4px;
+  }
+  .skip-link:focus { top: 0; }
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Vai al contenuto</a>
+
+<header class="site-header">
+  <h1>Il Giornale AI</h1>
+  <div class="date">Gioved&igrave;, 9 Luglio 2026 &mdash; Edizione Straordinaria</div>
+</header>
+
+<div class="container">
+  <article id="main-content" role="main">
+
+    <div class="article-meta-top">
+      <span class="category">Test &bull; Tecnologia</span>
+      <span>5 min lettura</span>
+    </div>
+
+    <h1 class="article-title">
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    </h1>
+
+    <p class="article-subtitle">
+      Test titolo lungo. Questa pagina serve per verificare se il publisher tronca titoli eccessivamente lunghi o li gestisce graficamente.
+    </p>
+
+    <div class="hero-image">
+      <img
+        src="https://www.aljazeera.com/wp-content/uploads/2026/07/20260708_180503-1783578197.jpg?resize=770%2C513&quality=80"
+        alt="Immagine di copertina dell'articolo di test"
+        width="770"
+        height="513"
+        loading="eager"
+        onerror="this.parentElement.innerHTML='<div style=\'padding:60px 20px;text-align:center;background:#eee;color:#888;border-radius:4px;font-family:sans-serif;\'>Immagine non disponibile</div>'"
+      >
+      <div class="caption">
+        Immagine di test &mdash; Fonte: Al Jazeera &bull; 8 Luglio 2026
+      </div>
+    </div>
+
+    <div class="article-body">
+
+      <p>
+        Questa &egrave; una pagina di test progettata per verificare il comportamento del sistema
+        di pubblicazione di fronte a titoli di lunghezza estrema. L'articolo che state leggendo
+        contiene un titolo composto da 150 caratteri &ldquo;A&rdquo; consecutivi, una condizione
+        al limite che mette alla prova la robustezza tipografica e la gestione responsive del layout.
+      </p>
+
+      <p>
+        In un flusso editoriale reale, titoli di questa lunghezza sarebbero inevitabilmente rivisti
+        e accorciati prima della pubblicazione. Tuttavia, &egrave; importante che il sistema sia
+        in grado di gestire ogni evenienza senza rompere la pagina, troncare il contenuto in modo
+        silenzioso o generare errori di rendering.
+      </p>
+
+      <div class="highlight-box">
+        <strong>Test in corso:</strong> Verifica della gestione di titoli eccessivamente lunghi,
+        del comportamento del word-break, dell'overflow-wrap e della leggibilit&agrave; su schermi
+        sia desktop che mobile.
+      </div>
+
+      <p>
+        Le propriet&agrave; CSS utilizzate per domare il titolo includono <code>word-break: break-word</code>,
+        <code>overflow-wrap: break-word</code> e <code>hyphens: auto</code>. Su schermi stretti il
+        carattere viene scalato progressivamente per mantenere un rapporto armonioso con il resto
+        del layout, senza mai uscire dal contenitore o generare scroll orizzontale.
+      </p>
+
+      <p>
+        Questo comportamento &egrave; fondamentale per garantire l'accessibilit&agrave; e la
+        fruibilit&agrave; dell'articolo su qualsiasi dispositivo: dal monitor ultrawide al
+        piccolo schermo di uno smartphone.
+      </p>
+
+      <div class="inline-image">
+        <img
+          src="https://www.aljazeera.com/wp-content/uploads/2026/07/20260708_180503-1783578197.jpg?resize=770%2C513&quality=80"
+          alt="Seconda immagine dell'articolo di test"
+          width="770"
+          height="513"
+          loading="lazy"
+          onerror="this.parentElement.innerHTML='<div style=\'padding:40px 20px;text-align:center;background:#eee;color:#888;border-radius:4px;font-family:sans-serif;\'>Immagine non disponibile</div>'"
+        >
+        <div class="caption">
+          La stessa immagine utilizzata come esempio di contenuto intermedio &mdash; Fonte: Al Jazeera
+        </div>
+      </div>
+
+      <p>
+        L'articolo conferma che il publisher gestisce correttamente il titolo lungo senza
+        troncamenti arbitrari, preservando l'integrit&agrave; del contenuto e la leggibilit&agrave;
+        complessiva della pagina. Tutti gli elementi &mdash; header, hero image, corpo del testo,
+        citazioni e footer &mdash; si adattano armoniosamente alla presenza del titolo esteso.
+      </p>
+
+    </div>
+
+    <!-- Fonti -->
+    <section class="sources-section">
+      <h3>Fonti</h3>
+      <ul>
+        <li><a href="https://www.aljazeera.com/" target="_blank" rel="noopener noreferrer">Al Jazeera &mdash; News Archive (2026)</a></li>
+        <li><a href="https://schema.org/Article" target="_blank" rel="noopener noreferrer">Schema.org &mdash; Article Structured Data</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap" target="_blank" rel="noopener noreferrer">MDN Web Docs &mdash; overflow-wrap / word-break</a></li>
+      </ul>
+    </section>
+
+  </article>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-brand">Il Giornale AI &copy; 2026</div>
+  <p>Pubblicato il 9 Luglio 2026 &bull; Test di troncamento titoli &bull; Tutti i diritti riservati</p>
+</footer>
+
+</body>
+</html>

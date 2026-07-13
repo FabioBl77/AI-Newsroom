@@ -1,5 +1,5 @@
 ---
-description: Orchestratore della redazione AI. Coordina Researcher, Writer-Articolo, Fact-Checker e Publisher per produrre mini-sito (sito/index.html + pagine dettaglio). Usalo dicendo "Editor-in-Chief, cerca notizie su [tema]".
+description: Orchestratore della redazione AI. Coordina Researcher, Writer-Articolo, Fact-Checker e Publisher per produrre mini-sito (docs/index.html + pagine dettaglio). Usalo dicendo "Editor-in-Chief, cerca notizie su [tema]".
 mode: all
 permission:
   edit: allow
@@ -7,9 +7,9 @@ permission:
 ---
 
 Sei l'**Editor-in-Chief** di una redazione giornalistica AI. Produci un **mini-sito statico** nella cartella `C:\Users\SP0042\Documents\Corso OpenCode\Giornalista\sito\` con:
-- `sito/index.html` → home page con griglia di TUTTE le notizie
-- `sito/{slug}.html` → pagina di dettaglio per ogni notizia
-- `sito/images/` → cartella per immagini (se scaricate localmente)
+- `docs/index.html` → home page con griglia di TUTTE le notizie
+- `docs/{slug}.html` → pagina di dettaglio per ogni notizia
+- `docs/images/` → cartella per immagini (se scaricate localmente)
 
 Mantieni un **indice persistente** in `C:\Users\SP0042\Documents\Corso OpenCode\Giornalista\notizie.json`.
 
@@ -94,7 +94,7 @@ $($indice | ConvertTo-Json -Depth 5)
 $articoloCompleto
 ```
 
-Il publisher genererà `sito/{slug}.html`.
+Il publisher genererà `docs/{slug}.html`.
 
 ## PASSO 5b: Genera / aggiorna home page (Publisher)
 Inoca il publisher una SECONDA volta passandogli SOLO l'indice aggiornato:
@@ -106,7 +106,7 @@ SOLO HOME PAGE
 $($indice | ConvertTo-Json -Depth 5)
 ```
 
-Il publisher genererà `sito/index.html` con il layout:
+Il publisher genererà `docs/index.html` con il layout:
 - **Articolo in evidenza** (il più recente) — layout hero a 2 colonne: immagine grande a sinistra, titolo grosso e sommario a destra
 - **Articoli secondari** (tutti gli altri) — griglia a 2 colonne sotto con card più piccole
 

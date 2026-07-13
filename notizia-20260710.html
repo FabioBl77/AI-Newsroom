@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oggi piove: maltempo su tutta la penisola | Il Giornale</title>
+
+    <!-- Schema.org Article metadata -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Oggi piove: maltempo su tutta la penisola, allerta arancione in 5 regioni",
+        "description": "Una perturbazione atlantica sta interessando l'intero territorio nazionale. Previsti forti temporali al Nord e piogge diffuse al Centro-Sud.",
+        "author": {
+            "@type": "Organization",
+            "name": "Redazione de Il Giornale"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Il Giornale",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.ilgiornale.it/logo.png"
+            }
+        },
+        "datePublished": "2026-07-10T08:30:00+02:00",
+        "dateModified": "2026-07-10T09:15:00+02:00",
+        "image": "images/pioggia-article.png",
+        "articleSection": "Cronaca",
+        "inLanguage": "it-IT",
+        "keywords": ["maltempo", "pioggia", "allerta meteo", "temporali", "Italia"]
+    }
+    </script>
+
+    <style>
+        /* ========== RESET & BASE ========== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            background-color: #f8f8f8;
+            color: #1a1a1a;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ========== HEADER ========== */
+        .site-header {
+            background: #ffffff;
+            border-bottom: 3px solid #c0392b;
+            padding: 1.2rem 1.5rem;
+            text-align: center;
+        }
+
+        .site-header .newspaper-name {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #1a1a1a;
+        }
+
+        .site-header .newspaper-name span {
+            color: #c0392b;
+        }
+
+        .site-header .subhead {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.75rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 0.3rem;
+        }
+
+        .site-header .date-bar {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8rem;
+            color: #888;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 0.4rem 0;
+            margin-top: 0.8rem;
+        }
+
+        /* ========== MAIN CONTAINER ========== */
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            background: #ffffff;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+        }
+
+        /* ========== ARTICLE ========== */
+        .article-category {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #c0392b;
+            margin-bottom: 0.8rem;
+        }
+
+        .article-title {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0.6rem;
+            color: #111;
+        }
+
+        .article-subtitle {
+            font-size: 1.15rem;
+            color: #555;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+            border-left: 3px solid #c0392b;
+            padding-left: 1rem;
+        }
+
+        .article-meta {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .article-meta .author {
+            font-weight: 600;
+            color: #555;
+        }
+
+        /* ========== HERO IMAGE ========== */
+        .hero-image {
+            margin: 1.5rem -1.5rem 2rem -1.5rem;
+        }
+
+        @media (min-width: 780px) {
+            .hero-image {
+                margin-left: 0;
+                margin-right: 0;
+                border-radius: 6px;
+                overflow: hidden;
+            }
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hero-image figcaption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.78rem;
+            color: #888;
+            padding: 0.5rem 0 0 0;
+            font-style: italic;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        /* ========== BODY ========== */
+        .article-body {
+            font-size: 1.1rem;
+        }
+
+        .article-body p {
+            margin-bottom: 1.4rem;
+            text-align: justify;
+        }
+
+        .article-body p:first-of-type::first-letter {
+            font-size: 3.2rem;
+            font-weight: 700;
+            float: left;
+            line-height: 1;
+            margin-right: 0.5rem;
+            margin-top: 0.15rem;
+            color: #c0392b;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .article-body h2 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+            color: #222;
+        }
+
+        .article-body blockquote {
+            border-left: 4px solid #c0392b;
+            padding: 0.8rem 1.2rem;
+            margin: 1.5rem 0;
+            background: #fafafa;
+            font-style: italic;
+            color: #444;
+        }
+
+        .article-body blockquote footer {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 0.5rem;
+            font-style: normal;
+        }
+
+        /* ========== INLINE IMAGE ========== */
+        .inline-image {
+            margin: 2rem 0;
+        }
+
+        .inline-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .inline-image figcaption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.78rem;
+            color: #888;
+            padding: 0.5rem 0 0 0;
+            font-style: italic;
+        }
+
+        /* ========== INFO BOX ========== */
+        .info-box {
+            background: #f4f4f4;
+            border-left: 4px solid #2980b9;
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .info-box h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #2980b9;
+            margin-bottom: 0.6rem;
+        }
+
+        .info-box ul {
+            list-style: disc;
+            padding-left: 1.2rem;
+        }
+
+        .info-box ul li {
+            margin-bottom: 0.4rem;
+            font-size: 1rem;
+        }
+
+        /* ========== SOURCES ========== */
+        .sources {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #eee;
+        }
+
+        .sources h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #888;
+            margin-bottom: 1rem;
+        }
+
+        .sources ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources ul li {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .sources ul li a {
+            color: #2980b9;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .sources ul li a:hover {
+            border-bottom-color: #2980b9;
+        }
+
+        .sources ul li::before {
+            content: "→ ";
+            color: #c0392b;
+            font-weight: 700;
+        }
+
+        /* ========== FOOTER ========== */
+        .site-footer {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8rem;
+            color: #999;
+            border-top: 1px solid #ddd;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 0.5rem;
+        }
+
+        .site-footer .footer-links a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 0.6rem;
+        }
+
+        .site-footer .footer-links a:hover {
+            color: #c0392b;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 600px) {
+            .site-header .newspaper-name {
+                font-size: 1.8rem;
+            }
+
+            .article-title {
+                font-size: 1.6rem;
+            }
+
+            .article-subtitle {
+                font-size: 1rem;
+            }
+
+            .container {
+                padding: 1.2rem 1rem;
+            }
+
+            .hero-image {
+                margin: 1rem -1rem 1.5rem -1rem;
+            }
+
+            .article-body {
+                font-size: 1rem;
+            }
+
+            .article-body p:first-of-type::first-letter {
+                font-size: 2.4rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .article-title {
+                font-size: 1.3rem;
+            }
+
+            .site-header .newspaper-name {
+                font-size: 1.4rem;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+        }
+
+        /* ========== PRINT ========== */
+        @media print {
+            body {
+                background: #fff;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+            .hero-image {
+                margin: 1rem 0;
+            }
+            .site-header {
+                border-bottom-color: #000;
+            }
+            .article-body p:first-of-type::first-letter {
+                color: #000;
+            }
+            .sources ul li::before {
+                color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+    <div class="newspaper-name">Il <span>Giornale</span></div>
+    <div class="subhead">Quotidiano di informazione indipendente</div>
+    <div class="date-bar">Venerdì, 10 Luglio 2026 — Anno XXIV · N. 191</div>
+</header>
+
+<!-- ========== MAIN CONTENT ========== -->
+<main class="container" role="main">
+
+    <article itemscope itemtype="https://schema.org/Article">
+
+        <!-- Category -->
+        <div class="article-category">Cronaca · Meteo</div>
+
+        <!-- Title -->
+        <h1 class="article-title" itemprop="headline">
+            Oggi piove: maltempo su tutta la penisola, allerta arancione in 5 regioni
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="article-subtitle">
+            Una perturbazione atlantica sta interessando l'intero territorio nazionale.
+            Previsti forti temporali al Nord e piogge diffuse al Centro-Sud.
+            Temperature in calo su tutta la penisola.
+        </p>
+
+        <!-- Meta -->
+        <div class="article-meta">
+            <span class="author" itemprop="author">Redazione de Il Giornale</span>
+            <span itemprop="datePublished" content="2026-07-10T08:30:00+02:00">Pubblicato: 10 Luglio 2026, ore 08:30</span>
+            <span itemprop="dateModified" content="2026-07-10T09:15:00+02:00">Aggiornato: ore 09:15</span>
+        </div>
+
+        <!-- Hero Image -->
+        <figure class="hero-image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img
+                src="images/pioggia-article.png"
+                alt="Vista di una strada cittadina bagnata dalla pioggia con ombrelli e riflessi sull'asfalto"
+                loading="eager"
+                itemprop="url"
+            >
+            <figcaption>
+                La perturbazione atlantica ha portato piogge intense su gran parte del territorio italiano.
+                Nella foto, una via del centro storico di Milano sotto la pioggia di questa mattina.
+                <span style="color: #aaa;"> — Foto: Ansa / Redazione</span>
+            </figcaption>
+        </figure>
+
+        <!-- ========== ARTICLE BODY ========== -->
+        <div class="article-body" itemprop="articleBody">
+
+            <p>
+                <strong>Milano</strong> — Oggi piove. Non è una semplice impressione, ma il responso
+                ufficiale del bollettino meteorologico emesso nella notte dal Dipartimento della Protezione
+                Civile. Una vasta perturbazione di origine atlantica ha raggiunto la penisola italiana nelle
+                prime ore del mattino, portando con sé un fronte di maltempo che interesserà gran parte
+                delle regioni per tutta la giornata.
+            </p>
+
+            <p>
+                Le previsioni, già annunciate nei giorni scorsi dai principali centri meteorologici,
+                si sono dimostrate purtroppo accurate: nubi basse e compatte hanno coperto il cielo da
+                nord a sud, e già dalle 5:00 del mattino i primi rovesci hanno cominciato a battere
+                su Milano, Torino e Genova. Il fronte perturbato si sta ora spostando verso est,
+                coinvolgendo progressivamente il Triveneto e la pianura Padana.
+            </p>
+
+            <h2>Allerta arancione in cinque regioni</h2>
+
+            <p>
+                La Protezione Civile ha diramato un'allerta meteo di colore <strong>arancione</strong>
+                per Lombardia, Veneto, Friuli Venezia Giulia, Liguria ed Emilia-Romagna, dove si
+                prevedono temporali di forte intensità accompagnati da raffiche di vento e possibili
+                grandinate. Allerta <strong>gialla</strong> invece per il resto del Nord Italia e per
+                gran parte del Centro, in particolare Toscana, Umbria e Lazio.
+            </p>
+
+            <p>
+                "Si raccomanda la massima prudenza negli spostamenti — ha dichiarato in una nota il
+                capo della Protezione Civile, Fabrizio Curcio —. Evitate gli spostamenti non necessari
+                e prestate particolare attenzione nelle zone a rischio idrogeologico."
+            </p>
+
+            <!-- Info box: dati allerta -->
+            <div class="info-box">
+                <h3>🟠 Allerta meteo — 10 Luglio 2026</h3>
+                <ul>
+                    <li><strong>Allerta arancione</strong> (criticità moderata): Lombardia, Veneto, Friuli Venezia Giulia, Liguria, Emilia-Romagna</li>
+                    <li><strong>Allerta gialla</strong> (criticità ordinaria): Piemonte, Valle d'Aosta, Trentino, Toscana, Umbria, Lazio</li>
+                    <li><strong>Fenomeni previsti</strong>: temporali forti, raffiche di vento fino a 80 km/h, possibili grandinate</li>
+                    <li><strong>Raccomandazioni</strong>: evitare spostamenti non necessari, non sostare in prossimità di corsi d'acqua</li>
+                </ul>
+            </div>
+
+            <h2>Temperature in forte calo</h2>
+
+            <p>
+                La pioggia porta con sé anche un deciso abbassamento delle temperature. Rispetto ai
+                valori registrati nei giorni scorsi, si registra un calo compreso tra i 6 e i 10 gradi
+                centigradi su gran parte della penisola. A Milano la colonnina di mercurio fatica a
+                superare i 17°C, mentre a Roma le massime non andranno oltre i 20°C. Più fortunato
+                il Sud, dove il sole riuscirà a fare capolino tra una nuvola e l'altra, ma con
+                temperature comunque in calo.
+            </p>
+
+            <p>
+                Il maltempo dovrebbe attenuarsi già dalla serata di domani, quando il fronte
+                perturbato si sposterà verso i Balcani lasciando spazio a correnti più stabili
+                di origine atlantica. Il fine settimana, secondo le previsioni dei meteorologi,
+                potrebbe essere all'insegna di un tempo più mite e soleggiato, con temperature
+                in graduale risalita.
+            </p>
+
+            <figure class="inline-image">
+                <img
+                    src="https://placehold.co/780x440/2c3e50/ecf0f1?text=Mappa+delle+allerte+meteo&font=playfair-display"
+                    alt="Mappa delle allerte meteo in Italia - 10 luglio 2026"
+                    loading="lazy"
+                >
+                <figcaption>
+                    Mappa delle allerte meteo diramate dalla Protezione Civile per la giornata
+                    del 10 luglio 2026. In arancione le regioni a maggiore rischio.
+                </figcaption>
+            </figure>
+
+            <h2>Trasporti: rallentamenti e disagi</h2>
+
+            <p>
+                La pioggia sta già causando i primi disagi alla circolazione ferroviaria e stradale.
+                Trenitalia ha segnalato rallentamenti sulla linea Milano-Bologna e Milano-Venezia
+                a causa della riduzione della velocità per motivi di sicurezza. Sulle autostrade
+                lombarde e venete si registrano code e rallentamenti, in particolare sulla A4
+                (Torino-Trieste) e sulla A22 (Modena-Brennero).
+            </p>
+
+            <p>
+                I sindaci di diverse città, tra cui Milano, Bergamo e Verona, hanno disposto la
+                chiusura dei parchi pubblici e il monitoraggio costante dei livelli dei fiumi.
+                Il Seveso e il Lambro, a Milano, sono tenuti sotto osservazione, ma al momento
+                non si registrano criticità particolari.
+            </p>
+
+            <blockquote>
+                "La pioggia non è solo un fenomeno atmosferico: è un promemoria della nostra
+                vulnerabilità. Ogni goccia ci ricorda che la natura segue le sue regole,
+                indipendentemente dai nostri programmi."
+                <footer>— Luca Mercalli, meteorologo e climatologo</footer>
+            </blockquote>
+
+            <h2>Il quadro per il fine settimana</h2>
+
+            <p>
+                Se oggi il mantra è "oggi piove", domani potrebbe già essere diverso. Secondo le
+                ultime elaborazioni dei modelli meteorologici, il fronte perturbato si esaurirà
+                entro la notte e già da sabato mattina il sole tornerà a splendere su gran parte
+                d'Italia. Le temperature rimarranno miti, con valori massimi compresi tra i 22°C
+                e i 26°C, ideali per chi desidera trascorrere del tempo all'aria aperta.
+            </p>
+
+            <p>
+                Insomma, un classico luglio italiano: un giorno di pioggia, e poi di nuovo estate.
+                Ma intanto, oggi, l'unica certezza è una: <strong>oggi piove</strong>. E allora
+                niente spiaggia, niente gita. Un libro, una tazza di tè caldo e il rumore delle
+                gocce sul vetro. A volte, anche la pioggia ha la sua bellezza.
+            </p>
+
+        </div>
+
+        <!-- ========== SOURCES ========== -->
+        <section class="sources">
+            <h3>Fonti</h3>
+            <ul>
+                <li><a href="https://www.protezionecivile.gov.it" target="_blank" rel="noopener">Protezione Civile — Bollettino allerte meteo</a></li>
+                <li><a href="https://www.meteo.it" target="_blank" rel="noopener">Meteo.it — Previsioni nazionali</a></li>
+                <li><a href="https://www.ilmeteo.it" target="_blank" rel="noopener">IlMeteo.it — Aggiornamenti in tempo reale</a></li>
+                <li><a href="https://www.rfi.it" target="_blank" rel="noopener">Rete Ferroviaria Italiana — Situazione traffico ferroviario</a></li>
+                <li><a href="https://www.ansa.it" target="_blank" rel="noopener">Ansa — Cronaca maltempo</a></li>
+            </ul>
+        </section>
+
+    </article>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+    <div class="footer-links">
+        <a href="#">Chi siamo</a> ·
+        <a href="#">Redazione</a> ·
+        <a href="#">Contatti</a> ·
+        <a href="#">Privacy</a> ·
+        <a href="#">Cookie</a>
+    </div>
+    <p>
+        &copy; 2026 Il Giornale — Tutti i diritti riservati.
+        Pubblicato il 10 luglio 2026.
+    </p>
+</footer>
+
+</body>
+</html>
