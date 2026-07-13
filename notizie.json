@@ -1,4 +1,4 @@
-ï»¿{
+{
     "articles":  [
                      {
                          "image_url":  "images/chatgpt-smartphone.jpg",
@@ -6,7 +6,7 @@
                          "filename":  "chatgpt-2026.html",
                          "image_credit":  "Photo by Tim Witzdam on Unsplash (Unsplash License)",
                          "date":  "10 Luglio 2026",
-                         "summary":  "ChatGPT diventa il termine pi\u00f9 cercato su Google con 94,6 milioni di ricerche mensili, superando YouTube e Amazon. IPO da 1 trilione di dollari all\u0027orizzonte.",
+                         "summary":  "ChatGPT diventa il termine più cercato su Google con 94,6 milioni di ricerche mensili, superando YouTube e Amazon. IPO da 1 trilione di dollari all\u0027orizzonte.",
                          "title":  "ChatGPT supera YouTube e Amazon: l\u0027AI riscrive Google"
                      },
                      {
@@ -33,8 +33,8 @@
                          "filename":  "francia-mbappe-semifinale.html",
                          "image_credit":  "Foto di Eduard Delputte su Unsplash",
                          "date":  "10 Luglio 2026",
-                         "summary":  "La Francia batte il Marocco 2-0 ai quarti. Mbapp\u00e9 segna e sbaglia un rigore. Demb\u00e9l\u00e9 chiude. Terza semifinale consecutiva per i Bleus.",
-                         "title":  "Mondiali 2026: Francia in semifinale, Mbapp\u00e9 show"
+                         "summary":  "La Francia batte il Marocco 2-0 ai quarti. Mbappé segna e sbaglia un rigore. Dembélé chiude. Terza semifinale consecutiva per i Bleus.",
+                         "title":  "Mondiali 2026: Francia in semifinale, Mbappé show"
                      },
                      {
                          "image_url":  "images/redbull-f1.jpg",
@@ -53,6 +53,15 @@
                          "date":  "5 Luglio 2026",
                          "summary":  "Gattuso presenta il 4-2-3-1. Cessioni eccellenti, conti in rosso, curva che diserta. La sfida parte il 16 agosto.",
                          "title":  "Lazio, Gattuso promette rivoluzione: grinta e sacrificio"
+                     },
+                     {
+                         "image_url":  "images/genai-agent.png",
+                         "slug":  "ai-agent-engineer-2026",
+                         "filename":  "ai-agent-engineer-2026.html",
+                         "image_credit":  "Marxav via Wikimedia Commons — CC BY-SA 4.0",
+                         "date":  "13 Luglio 2026",
+                         "summary":  "Stipendi fino a 190 mila dollari, crescita del +280% e un nuovo ruolo che sta ridefinendo l\u0027intelligenza artificiale nelle imprese. Il 2026 è l\u0027anno dell\u0027AI Agent Engineer.",
+                         "title":  "AI Agent Engineer: il lavoro più caldo del 2026"
                      }
                  ]
 }
