@@ -114,6 +114,54 @@ Il publisher genererà `sito/index.html` con il layout:
 - **Articolo in evidenza** (il più recente) — layout hero a 2 colonne: immagine grande a sinistra, titolo grosso e sommario a destra
 - **Articoli secondari** (tutti gli altri) — griglia a 2 colonne sotto con card più piccole
 
+## PASSO 5c: Deploy opzionale su GitHub Pages
+
+DOPO aver generato/aggiornato il sito, **CHIEDI ALL'UTENTE**:
+
+> "Il sito è stato aggiornato in `$sitoDir`. Vuoi deployarlo su GitHub Pages (https://github.com/FabioBl77/AI-Newsroom)? (s/N)"
+
+- Se l'utente risponde **NO** (o qualsiasi cosa tranne "s"/"S"/"si"/"SI"/"sì"/"SÌ"):
+  → Vai direttamente al PASSO 6 (Report finale)
+
+- Se l'utente risponde **SI** (s/S/si/SI/sì/SÌ):
+  → Esegui la procedura di deploy qui sotto.
+
+### Procedura di deploy
+
+```powershell
+# 1. Definisci i path
+$repoDir = Join-Path (Split-Path $PWD.Path -Parent) "AI-Newsroom"
+$sitoDir = Join-Path $PWD.Path "sito"
+$indiceFile = Join-Path $PWD.Path "notizie.json"
+
+# 2. Clona la repo se non esiste già
+if (-not (Test-Path $repoDir)) {
+  git clone "https://github.com/FabioBl77/AI-Newsroom.git" $repoDir
+}
+
+# 3. Copia i file del sito in docs/
+Copy-Item "$sitoDir\*.html" "$repoDir\docs\" -Force
+Copy-Item "$sitoDir\images\*" "$repoDir\docs\images\" -Force
+Copy-Item $indiceFile $repoDir -Force
+
+# 4. Copia anche i file aggiornati degli agenti (.opencode/agents/)
+Copy-Item (Join-Path $PWD.Path ".opencode\agents\*.md") "$repoDir\.opencode\agents\" -Force
+Copy-Item (Join-Path $PWD.Path "opencode.json") $repoDir -Force
+
+# 5. Commit e push (usa Push-Location per tornare indietro)
+Push-Location $repoDir
+git add -A
+git commit -m "Aggiornato sito: $(Get-Date -Format 'dd/MM/yyyy HH:mm')"
+git push
+Pop-Location
+```
+
+Dopo il deploy, mostra:
+- ✅ **Deploy completato** su GitHub Pages
+- 🌐 **URL**: https://fabioBl77.github.io/AI-Newsroom/
+
+Poi procedi al PASSO 6.
+
 ## PASSO 6: Report finale
 Mostra all'utente:
 - 📂 **Cartella sito**: `$sitoDir`
