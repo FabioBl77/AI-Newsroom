@@ -34,7 +34,7 @@ Riceverai i risultati completi di tutti i test eseguiti da researcher-Test, writ
 - Pronto per essere salvato come file .md
 
 Salva il file in:
-`C:\Users\SP0042\Documents\Corso OpenCode\Giornalista\report-test-completo.md`
+`[progetto-corrente]\report-test-completo.md` (usa `Join-Path $PWD.Path "report-test-completo.md"`)
 
 Alla fine, restituisci:
 - Path del file generato

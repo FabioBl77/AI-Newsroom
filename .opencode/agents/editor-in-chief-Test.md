@@ -83,7 +83,7 @@ Risultati writer-articolo: [risultati dettagliati dei 6 test]
 Risultati fact-checker: [risultati dettagliati dei 6 test]
 Risultati publisher: [risultati dettagliati dei 6 test]
 
-Genera il report PDF/Markdown completo dei test. Salva il file in C:\Users\SP0042\Documents\Corso OpenCode\Giornalista\report-test-completo.md"
+Genera il report PDF/Markdown completo dei test. Salva il file report-test-completo.md nella root del progetto corrente (\$PWD.Path)."
 
 ### Fase 6: Mostra all'utente
 - Path del file report generato
